@@ -1,0 +1,24 @@
+/*
+ * Theme Name: Muzik Starter Theme
+ * Description: Starter Theme for free use with Timber plugin
+ * Author: Upstatement For YOU!
+ * Version: 1.0
+*/
+
+// Node/Gulp/node-sass used for compiling scss to css.
+// Uncomment below if you prefer to use RUBY for a task watcher. 
+// @import "compass";
+// @import "compass/reset";
+
+// Here we import our partials
+@import "_partials/mixins";
+@import "_partials/variables";
+@import "_partials/typography";
+
+// parts of post pages.
+@import "_partials/header.scss";
+@import "_partials/slider.scss";
+@import "_partials/music_area.scss";
+
+// post pages.
+@import "_posts/about.scss";

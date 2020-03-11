@@ -1,0 +1,24 @@
+{% if social_links_menu %}
+	<div class="col-xl-3 col-lg-3 d-none d-lg-block">
+		<div class="social_icon text-right">
+			<ul>
+				{% for item in social_links_menu.items %}
+					<li class="{{ item.classes | join(' ') }}">
+						<a target="{{ item.target }}" href="{{ item.link }}" title="{{ item.title }}">
+						{% if item.title == "Email" or item.title == "email" %}
+							<span class="fa fa-envelope-square"></span>
+						{% else %}
+							<span class="fa fa-{{ item.title | lower }}"></span>
+						{% endif %}
+						</a>
+					</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+{% endif %}
+
+
+{# <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+			<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+			<li><a href="#"><i class="fa fa-instagram"></i></a></li> #}

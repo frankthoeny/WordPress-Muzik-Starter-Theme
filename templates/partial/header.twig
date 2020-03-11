@@ -1,0 +1,32 @@
+<a class="skip-link screen-reader-text" href="#content">{{ _e( 'Skip to content') }}</a>
+<header class="header top-app-bar">
+	<div class="header-area">
+		<div id="sticky-header">
+			<div class="container-fluid">
+				{% block header %}
+					<nav class="navbar navbar-expand-lg navbar-dark" role="navigation">
+
+						<div class="col-6 col-xl-3 col-lg-2">
+							<div class="navbar-brand">
+								<p class="h5"><a class="text-uppercase" href="{{site.url}}" rel="home">{{site.name}}</a></p>
+								<p class="h6">{{site.description}}</p>
+							</div>
+						</div>
+
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+
+						<!-- Navbar links -->
+						<div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+							{% include "partial/menu.twig" with {'items': menu.get_items} %}
+						</div>
+						{% include "partial/socialicons.twig" %}
+
+					</nav>
+					<!-- #nav -->
+				{% endblock %}
+			</div>
+		</div>
+	</div>
+</header>

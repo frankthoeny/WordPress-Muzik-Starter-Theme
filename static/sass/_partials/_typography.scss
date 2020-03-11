@@ -1,0 +1,24 @@
+/*_typography.scss*/
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,600,700|Muli:300,300i,400,400i,600,600i,700,700i,900&display=swap');
+
+
+
+body {
+  color: $text-color;
+  font-size: $base-font-size;
+  font-family: $base-font-family;
+  font-weight: $base-font-weight;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $font1;
+  color: #001d38;
+}
+h2 {
+    font-size: 50px;
+}

@@ -1,0 +1,21 @@
+{
+  "name": "starter-theme",
+  "version": "1.0.0",
+  "description": "Front End development with material.io",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Frank Thoeny",
+  "license": "ISC",
+  "homepage": "https://github.com/timber/starter-theme#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2"
+  }
+}
